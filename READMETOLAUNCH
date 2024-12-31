@@ -1,0 +1,36 @@
+This is a quick rundown on how to compile and run the todo-app
+This app allows us to register users, login, and create tasks for it to be remembered on the database
+The files have been seperated nicely for you
+In the main file directly in todo-app there should be four files:
+1.browser-client.html
+2.package.json
+3.package-lock.json
+4.server.js
+Within todo-app there are two seperate main folders:
+1.browser-client
+2.electron-client
+(WARNING: THEY ARE CAPS SENSITIVE)
+Do not worry about the node_modules, once you have install npm and the needed packages, they will automatically be there.
+Within the browser-client folder, there are three files:
+1.index.html
+2.main.js
+3.renderer.js
+  Within the electron-client folder, there exists 5 files:
+  1.index.html
+  2.main.js
+  3.package.json
+  4.package-lock.json
+  5.renderer.js
+  In this folder you would have to first
+  npm init -y (initializes a new project inside the client folder)
+  npm install electron --save-dev (installs electron)
+  once you finished downloading, you should move the files in
+In the main folder
+npm init -y (initializes the project)
+npm install express sqlite3 body-parser jsonwebtoken bcrypt cors ( Install the dependencies)
+node server.js (In the main folder, this starts the server and you should not shut it down. It should say running on localhost:3000
+To run the server, once you have started the server by using 'node server.js'
+Open a new terminal, head in the browser-client folder and serve the server 'npx http-server'
+By doing that you should be able to see multiple IP addresses that are being used to serve the client. (Use the Ip address to check on browser or localhost)
+After that leave that terminal open. By now you should have two terminals running, leave both of them running and open a new terminal
+Open a new terminal and head into the electron-client folder, open Electron by using 'npm start', doing this should open the client for the electron, in which then you can test the app see if it working with the browser in tandem
